@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Product Management</h1>
+    <a href="add.html" class="btn">Add New Product</a>
+  </header>
+  <main>
+    <section class="product-list">
+      <h2>Products</h2>
+      <ul>
+        <li>
+          <div class="product">
+            <span class="product-name">Product 1</span>
+            <span class="product-price">$10.00</span>
+            <div class="actions">
+              <a href="edit.html?id=1" class="btn edit">Edit</a>
+              <button class="btn delete" onclick="deleteProduct(1)">Delete</button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product">
+            <span class="product-name">Product 2</span>
+            <span class="product-price">$15.00</span>
+            <div class="actions">
+              <a href="edit.html?id=2" class="btn edit">Edit</a>
+              <button class="btn delete" onclick="deleteProduct(2)">Delete</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <script src="scripts.js"></script>
+</body>
+</html>

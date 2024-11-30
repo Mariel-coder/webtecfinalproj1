@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://logolook.net/wp-content/uploads/2021/06/Nike-Logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>NIKE STORE</h1>
+            </div>
+            <ul class="nav-links">
+                <li><button id="cart-button">🛒 CART $0.00</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to NIKE STORE!</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e777c881-5b62-4250-92a6-362967f54cca/WMNS+AIR+FORCE+1+%2707.png" alt="Running Shoes">
+                <h3>Running Shoes</h3>
+                <p>₱4,599</p>
+                <button class="details-button" data-product="running-shoes">DETAILS</button>
+            </div>
+            <div class="product">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/60d2e87c-9eaa-46a0-b9aa-0f730291262b/AIR+FORCE+1+%2707.png" alt="Basketball Shoes">
+                <h3>Basketball Shoes</h3>
+                <p>₱5,599</p>
+                <button class="details-button" data-product="basketball-shoes">DETAILS</button>
+            </div>
+            <div class="product">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cd2a2802-13aa-41cf-865f-7d86889278cb/AIR+FORCE+1+LOW.png" alt="Casual Shoes">
+                <h3>Casual Shoes</h3>
+                <p>₱5,599</p>
+                <button class="details-button" data-product="casual-shoes">DETAILS</button>
+            </div>
+            <div class="product">
+                <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.3/h_464,c_limit/cfc79acb-60fa-4508-8a1c-794b34c033f0/book-1-ep-sunrise-basketball-shoes-W8ZWwg.png" alt="Woman-shoes">
+                <h3>Book 1 EP 'Sunrise'</h3>
+                <p>₱3,895</p>
+                <button class="details-button" data-product="casual-shoes">DETAILS</button>
+            </div>
+            <div class="product">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cf3cd098-5e63-422b-b81c-adb2e916e583/NIKE+AIR+MAX+AP.png" alt="womean-shoes">
+                <h3>Nike Air Max AP</h3>
+                <p>₱3,569</p>
+                <button class="details-button" data-product="casual-shoes">DETAILS</button>
+            </div>
+            <div class="product">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8415d8fa-bce1-43b7-9865-914c04986a97/NIKE+FLIGHT+LEGACY.png" alt="shoes">
+                <h3>Nike Flight Legacy</h3>
+                <p>₱3,499</p>
+                <button class="details-button" data-product="casual-shoes">DETAILS</button>
+            </div>
+            <div class="product">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/57566727-7e4a-4e2e-9cca-c382207058e3/AIR+MAX+COMMAND.png" alt="shoes1">
+                <h3>Nike Air Max Command</h3>
+                </p>₱4,829</p>
+                <button class="details-button" data-product="casual-shoes">DETAILS</button>
+
+            </div>
+            <div class="product">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/342250c6-7734-4f8c-a36d-cdbae29a08bb/AIR+MAX+90.png" alt="shoe2">
+                <h3>Nike Air Max 90</h3>
+                <p>₱5,279</p>
+                <button class="details-button" data-product="casual-shoes">DETAILS</button>
+             </div>
+             <div class="product">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a5c39041-c327-4b87-9241-3af13a0e15dc/NIKE+DUNK+LOW+QS.png" alr="shoe3">
+                <h3>Nike Dunk Low</h3>
+                <p>₱6,289</p>
+                <button class="details-button" data-product="casual-shoes">DETAILS</button>
+
+             </div>
+             <div class="product">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2d2c6d83-30ff-4d6d-8a2d-88a54adf31da/GIANNIS+IMMORTALITY+4+EP.png" alt="shoe4">
+                <h3>Giannis Immortality 4 EP</h3>
+                <p>34.34</p>
+                <button class="details-button" data-product="casual-shoes">DETAILS</button>
+            </div>
+            <div class="product">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/93bed762-f09f-4f87-b2c5-eaadf2a0dd2a/NIKE+AIR+MAX+2017.png" alt="shoe5">
+                <h3>Nike Air Max 2017</h3>
+                <p>₱7,629</p>
+                <button class="details-button" data-product="casual-shoes">DETAILS</button>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal for Cart -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Cart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <tr>
+                        <td colspan="4">EMPTY CART</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="cart-summary">
+                <p>Items: <span id="item-count">0</span></p>
+                <p>Total: <span id="total-amount">$0.00</span></p>
+            </div>
+            <button id="checkout-button">CHECKOUT</button>
+        </div>
+    </div>
+
+    <!-- Modal for Checkout -->
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-checkout">&times;</span>
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+                
+                <label for="zip">ZIP Code:</label>
+                <input type="text" id="zip" name="zip" required>
+                
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+                
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="United States">United States</option>
+                    <!-- Add more countries here -->
+                </select>
+                
+                <button type="submit">Payment Info</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+console.log('JavaScript file loaded successfully');
+
+let cartTotal = 0;
+let selectedProductPrice = 0;
+
+function addToCart(price) {
+  cartTotal += price;
+  document.getElementById('cart-total').innerText = cartTotal.toFixed(2);
+}
+
+function showDetails(title, price, imageSrc) {
+  console.log('Button clicked!');  // This will log to the console every time the button is clicked
+  selectedProductPrice = price;
+  document.getElementById('modal-title').innerText = title;
+  document.getElementById('modal-price-value').innerText = price.toFixed(2);
+  document.getElementById('modal-image').src = imageSrc;
+  document.getElementById('product-modal').style.display = 'flex';
+}
+
+function closeModal() {
+  document.getElementById('product-modal').style.display = 'none';
+}
+
+function addToCartFromModal() {
+  const quantity = parseInt(document.getElementById('quantity').value);
+  const totalPrice = selectedProductPrice * quantity;
+  addToCart(totalPrice);
+  closeModal();
+}
